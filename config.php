@@ -6,6 +6,8 @@ define( "DB_USERNAME", "root" );
 define( "DB_PASSWORD", "" );
 define( "CLASS_PATH", "classes" );
 
+include_once CLASS_PATH . '/DB.php';
+
 
 function handleException( $exception ) {
   echo "Sorry, a problem occurred. Please try later.";
