@@ -7,6 +7,7 @@ define( "DB_PASSWORD", "" );
 define( "CLASS_PATH", "classes" );
 
 include_once CLASS_PATH . '/DB.php';
+include_once CLASS_PATH . '/Token.php';
 
 
 function handleException( $exception ) {
