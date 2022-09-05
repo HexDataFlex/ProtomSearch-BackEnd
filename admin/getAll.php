@@ -29,6 +29,6 @@ if (Token::check(Token::getFromHeaders())) {
         echo json_encode($array);
     }
 } else {
-    trigger_error('Not authorized', E_USER_WARNING);
+    echo json_encode(array("error" => "Unauthorized"));
     http_response_code(401);
 }
