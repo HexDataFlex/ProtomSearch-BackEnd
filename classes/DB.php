@@ -19,7 +19,7 @@
   * @since      File available since v1.0.0-pre1
   */
 
-  include_once getcwd() . "../config.php";
+  include_once getcwd() . "/../config.php";
   
 /**
  * Database class

@@ -3,7 +3,7 @@ ini_set( "display_errors", true );
 date_default_timezone_set( "Europe/Bratislava" );  // http://www.php.net/manual/en/timezones.php
 define( "DB_DSN", "mysql:host=localhost;dbname=protomsearch" );
 define( "DB_USERNAME", "root" );
-define( "DB_PASSWORD", "" );
+define( "DB_PASSWORD", "x" );
 define( "CLASS_PATH", "classes" );
 
 include_once CLASS_PATH . '/DB.php';

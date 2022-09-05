@@ -20,7 +20,7 @@
  * @since      File available since v1.0.0-pre1
  */
 
-require_once "config.php";
+require_once getcwd() . "/../config.php";
 class Token
 {
     public static function create($id)
