@@ -34,7 +34,7 @@ class Token
     {
         $at = DB::count("SELECT * FROM sessions WHERE token=:token", array(':token' => $token)) ? DB::query("SELECT * FROM sessions WHERE token=:token", array(':token' => $token))[0]['logged_at'] : 1;
         $now = time();
-        $exp = $at + DB::query("SELECT * FROM config")[0]['token_exp'];
+        $exp = $at + TOKEN_EXP;
         if ($now >= $exp) {
             self::delete($token);
             return false;
