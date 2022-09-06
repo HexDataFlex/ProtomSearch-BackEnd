@@ -13,7 +13,7 @@ define("TOKEN_EXP", 1800);
 // --------------------------------------------------------------------
 
 // Turning on this setting will disable authentication for all.
-define("DISABLE_AUTH", true);
+define("DISABLE_AUTH", false);
 
 // --------------------------------------------------------------------
 // DANGER ZONE ! DANGER ZONE ! DANGER ZONE ! DANGER ZONE ! DANGER ZONE

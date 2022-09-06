@@ -2,9 +2,9 @@
 
 /**
  * File for manipulating with tokens.
- * 
+ *
  * This file contains functions for creating, checking, deleting and getting tokens.
- * 
+ *
  * PHP version 8.1.9
  *
  * Copyright (c) 2022 Protopixel
@@ -12,7 +12,7 @@
  * LICENSE: This source file is subject to version 3 of the GNU GPL license
  * that is available through the world-wide-web at the following URI:
  * http://www.gnu.org/licenses/gpl-3.0.html.
- * 
+ *
  * @category   Core
  * @author     Protopixel <protopixel06@gmail.com>
  * @license    http://www.gnu.org/licenses/gpl-3.0.html  GNU GPL v3
@@ -23,7 +23,7 @@
 require_once getcwd() . "/../config.php";
 class Token
 {
-    public static function create($id)
+    public static function generate($id)
     {
         $token = rand(10000000000000000, 99999999999999999);
         DB::query("INSERT INTO sessions (uid, token, logged_at) VALUES (:uid, :token, :time)", array(':uid' => $id, ':token' => $token, ':time' => time()));
